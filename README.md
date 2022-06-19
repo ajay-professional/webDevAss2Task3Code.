@@ -28,3 +28,9 @@ items[2].style.backgroundColor="green";
 for(let i=0;i<items.length;i++){
     items[i].style.fontWeight="bold";
 }
+//GET ELEMENT BY TAG NAME
+let abc=document.getElementsByTagName("li");
+abc[4].style.backgroundColor="blue";
+abc[4].style.color="white";
+let def=document.getElementsByClassName("li");
+def[0].style.fontWeight="bold";
