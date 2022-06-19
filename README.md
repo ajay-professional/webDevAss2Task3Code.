@@ -34,3 +34,16 @@ abc[4].style.backgroundColor="blue";
 abc[4].style.color="white";
 let def=document.getElementsByClassName("li");
 def[0].style.fontWeight="bold";
+
+//querySelector
+/*let alpha=document.querySelector('.list-group-item:nth-child(2)');
+alpha.style.backgroundColor="green";
+let beta=document.querySelector('.list-group-item:nth-child(3)');
+beta.style.visibility="hidden";*/
+//querySelectorAll
+let gamma=document.querySelectorAll('.list-group-item');
+gamma[1].style.color="green";
+let odd=document.querySelectorAll('li:nth-child(odd)');
+for(let i=0;i<odd.length;i++){
+    odd[i].style.backgroundColor="green";
+}
