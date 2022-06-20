@@ -47,3 +47,76 @@ let odd=document.querySelectorAll('li:nth-child(odd)');
 for(let i=0;i<odd.length;i++){
     odd[i].style.backgroundColor="green";
 }
+//Traversing the DOM
+let a=document.querySelector("#items");
+//parent node
+/*console.log(a.parentNode);
+a.parentNode.style.backgroundColor="lightblue";
+console.log(a.parentNode.parentNode);
+console.log(a.parentNode.parentNode.parentNode);*/
+//parentElement
+//console.log(a.parentElement);
+//a.parentElement.style.backgroundColor="lightblue";
+//console.log(a.parentElement.parentElement);
+//console.log(a.parentElement.parentElement.parentElement);
+//a.parentElement.parentElement.parentElement.style.backgroundColor="lightyellow";
+
+//childNodes
+//console.log(a.childNodes);
+
+//children
+/*console.log(a.children);
+console.log(a.children[1]);
+a.children[1].style.backgroundColor="yellow";*/
+
+//firstChild
+//console.log(a.firstChild);
+
+//firstElementChild
+//console.log(a.firstElementChild);
+//a.firstElementChild.textContent="THE SPORTS";
+
+//lastChild
+//console.log(a.lastChild);
+
+//lastElementChild
+/*console.log(a.lastElementChild);
+a.lastElementChild.textContent="THE POLITICS";*/
+
+//nextSibling
+//console.log(a.nextSibling);
+
+//nextElementSibling
+//console.log(a.nextElementSibling);
+
+//previousSibling
+//console.log(a.previousSibling);
+
+//previousElementSibling
+/*console.log(a.previousElementSibling);
+a.previousElementSibling.style.color="brown";*/
+
+//createElement
+//create a div
+var newdiv=document.createElement('div');
+console.log(newdiv);
+//class name
+newdiv.className="alpha";
+//id name
+newdiv.id="beta";
+//set attribute
+newdiv.setAttribute("attr", "gamma");
+//create a text node
+var newDivText=document.createTextNode("Hello World");
+newdiv.appendChild(newDivText);
+console.log(newdiv);
+var container=document.querySelector('header .container');
+var h1=document.querySelector('header h1');
+container.insertBefore(newdiv,h1);
+/*var container1=document.querySelector('.list-group');
+var df=container[0];
+container.insertBefore(newdiv,df);*/
+let parentNode=document.getElementById('items');
+parentNode.innerHTML='<li class="list-group-item">Item 1</li><li class="list-group-item">Item 2</li><li class="list-group-item">Item 3</li><li class="list-group-item">Item 4</li><li class="li">Item 5</li>';
+parentNode.innerHTML='<li>Hello world</li>' + parentNode.innerHTML;
+
